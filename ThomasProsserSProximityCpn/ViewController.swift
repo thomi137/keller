@@ -10,7 +10,7 @@ class ViewController: UIViewController {
                              "038a9a8ec42b7c617a22a0f9a55b1e10",
                              "55c20936191746a602f41792d92c9326"]
     let shortIdentifiers = ["2bf6fd22d71320eb"]
-    let cloudManager = CloudManager()
+    //let cloudManager = CloudManager()
     let proximityManager = ProximityManager()
     let deviceManager = ESTDeviceManager()
     
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             
             if(self.shortIdentifiers.contains(tempInfo.shortIdentifier)){
             
-            print("beacon ID: \(tempInfo.shortIdentifier), "
+            NSLog("beacon ID: \(tempInfo.shortIdentifier), "
                 + "temperature: \(tempInfo.temperatureInCelsius) °C")
             self.addBeaconTempView(tempInfo: tempInfo.temperatureInCelsius)
            }

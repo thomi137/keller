@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        ESTConfig.setupAppID("thomas-prosser-s-proximity-cpn", andAppToken:"66486d852897c6881313e78259a2f6d0");
+        // ESTConfig.setupAppID("thomas-prosser-s-proximity-cpn", andAppToken:"66486d852897c6881313e78259a2f6d0");
         
         return true
     }
