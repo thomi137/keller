@@ -22,45 +22,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i96-43-vvX">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGv-7x-qjT">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qX-c9-Bce">
-                                                <rect key="frame" x="92.5" y="297" width="190.5" height="53"/>
-                                                <string key="text">¯\_(ツ)_/¯
-No beacons around</string>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="3qX-c9-Bce" firstAttribute="centerY" secondItem="yGv-7x-qjT" secondAttribute="centerY" id="cWM-If-jek"/>
-                                            <constraint firstItem="3qX-c9-Bce" firstAttribute="centerX" secondItem="yGv-7x-qjT" secondAttribute="centerX" id="y1K-eT-YLL"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Ck-U8D">
+                                <rect key="frame" x="16" y="323" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="i96-43-vvX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z9T-32-hPk"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i96-43-vvX" secondAttribute="bottom" id="Za7-Z6-WJr"/>
-                            <constraint firstAttribute="trailing" secondItem="i96-43-vvX" secondAttribute="trailing" id="utZ-HD-033"/>
-                            <constraint firstItem="i96-43-vvX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="wpS-HL-y0I"/>
+                            <constraint firstItem="Hw4-Ck-U8D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="303" id="8la-h2-y6G"/>
+                            <constraint firstItem="Hw4-Ck-U8D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BRa-mS-B8P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hw4-Ck-U8D" secondAttribute="bottom" constant="308" id="S4L-kz-csj"/>
+                            <constraint firstItem="Hw4-Ck-U8D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zAJ-30-8rU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="noBeaconsView" destination="yGv-7x-qjT" id="yIB-X2-KjB"/>
-                        <outlet property="stackView" destination="i96-43-vvX" id="XuY-ss-6KC"/>
+                        <outlet property="tempLabel" destination="Hw4-Ck-U8D" id="RLY-gy-Pfd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

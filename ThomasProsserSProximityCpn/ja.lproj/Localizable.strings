@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  ThomasProsserSProximityCpn
+
+  Created by Thomas Prosser on 28.10.17.
+  Copyright © 2017 Thomas Prosser. All rights reserved.
+*/
+
+"Temperature is %.1f °C" = "温度は %.1f°C です";

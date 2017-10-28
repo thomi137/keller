@@ -20,19 +20,9 @@ extension ViewController {
     }
     
     func addBeaconTempView( tempInfo: NSNumber){
-        
-        let tempLabel = UILabel()
-        tempLabel.translatesAutoresizingMaskIntoConstraints = false
-        tempLabel.backgroundColor = UIColor.colorForEstimoteColor(.blueberryPie)
-        tempLabel.textAlignment = .center
-        tempLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
-        tempLabel.textColor = UIColor.white
-        tempLabel.text = "Temperature is \(tempInfo) C"
-        self.view.addSubview(tempLabel)
 
-        self.stackView.addArrangedSubview(tempLabel)
-        
-        self.tempView["temp"] = tempLabel
+        self.tempLabel.text = String(format:
+            NSLocalizedString("Temperature is %.1f °C", tableName: nil, bundle: Bundle.main, value:"" , comment: ""), tempInfo.doubleValue)
         
     }
     

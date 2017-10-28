@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     
     var tempView = [String: UIView]()
     
-    @IBOutlet weak var noBeaconsView: UIView!
-    @IBOutlet weak var stackView: UIStackView!
+   
+    @IBOutlet weak var tempLabel: UILabel!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
  
