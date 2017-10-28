@@ -6,4 +6,5 @@
   Copyright © 2017 Thomas Prosser. All rights reserved.
 */
 
-"Temperature is %.1f °C" = "温度は %.1f°C です";
+"Temperature is %.1f °C" = "温度は %.1f °C です";
+"Pressure is %.1f hPa" = "空気圧は %.1f hPa です";

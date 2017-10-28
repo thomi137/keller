@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     var tempView = [String: UIView]()
     
-   
+    @IBOutlet weak var pressureView: UILabel!
+    
     @IBOutlet weak var tempLabel: UILabel!
     
 
@@ -33,8 +34,19 @@ class ViewController: UIViewController {
            }
         }
         
-        self.deviceManager.register(forTelemetryNotification: tempNotification)
+        let pressureNotification = ESTTelemetryNotificationPressure{ (pressureInfo) in
+            
+            if(self.shortIdentifiers.contains(pressureInfo.shortIdentifier)){
+                
+                NSLog("beacon ID: \(pressureInfo.shortIdentifier),  " + "pressure: \(pressureInfo.pressureInPascals) Pascal")
+                
+                self.addBeaconPressureView(pressureInfo: pressureInfo.pressureInPascals)
+            }
+            
+        }
         
+        self.deviceManager.register(forTelemetryNotification: tempNotification)
+        self.deviceManager.register(forTelemetryNotification: pressureNotification)
     }
 }
 

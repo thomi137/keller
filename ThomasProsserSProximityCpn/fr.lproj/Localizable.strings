@@ -7,3 +7,5 @@
 */
 
 "Temperature is %.1f °C" = "La temperature est %.1f °C";
+"Pressure is %.1f hPa" = "La pression de l'air est de %.1f hPa";
+

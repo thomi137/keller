@@ -26,6 +26,12 @@ extension ViewController {
         
     }
     
+    func addBeaconPressureView(pressureInfo: NSNumber){
+        self.pressureView.text = String(format:
+            NSLocalizedString("Pressure is %.1f hPa", tableName: nil, bundle: Bundle.main, value:"" , comment: ""), pressureInfo.doubleValue/100)
+        
+    }
+    
     func presentFetchingColorsFailedAlert() {
         let alert = UIAlertController(title: "Fetching colors failed", message: "Check your internet connection, App ID and App Token.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
